@@ -14,6 +14,7 @@ function App() {
       <div>
         <Board />
       </div>
+      <button className=''></button>
     </div>
   );
 }
