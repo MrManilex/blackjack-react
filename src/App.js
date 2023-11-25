@@ -1,4 +1,5 @@
 import './App.css';
+import Board from './components/Board'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         Use terminology like Bust when losing.
         Incorporporate Bidding, Splitting, Betting (to some extent).
       */}
+      <Board/>
     </div>
   );
 }
