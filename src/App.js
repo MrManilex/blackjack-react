@@ -11,7 +11,9 @@ function App() {
         Use terminology like Bust when losing.
         Incorporporate Bidding, Splitting, Betting (to some extent).
       */}
-      <Board/>
+      <div>
+        <Board />
+      </div>
     </div>
   );
 }
