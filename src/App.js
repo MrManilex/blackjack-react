@@ -3,19 +3,29 @@ import Board from './components/Board'
 
 function App() {
   return (
-    <div className="App">
-      {/* 
-        Create gameboard background.
-        Create section for CPU side vs Player side.
-        Add buttons for player to choose to Hit or Stand.
-        Use terminology like Bust when losing.
-        Incorporporate Bidding, Splitting, Betting (to some extent).
-      */}
-      <div>
-        <Board />
-      </div>
-      <button className=''></button>
-    </div>
+    <>
+      <main className='min-h-screen'>
+        <div className='board flex justify-center'>
+          <div>
+            <Board />
+          </div>
+        </div>
+        <div className='buttons flex justify-around'>
+          {/* Make all buttons the same size. */}
+          <div>
+            <button className='btn btn-primary'>
+              Hit
+            </button>
+            <button className='btn btn-secondary'>
+              Stand
+            </button>
+          </div>
+          <button className='btn btn-info'>
+            Reset
+          </button>
+        </div>
+      </main>
+    </>
   );
 }
 
