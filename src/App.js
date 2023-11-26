@@ -1,28 +1,18 @@
-import './App.css';
+import './App.css'
 import Board from './components/Board'
+import { useState } from 'react'
 
 function App() {
+  const [game, finished] = useState(false)
+  const [winner, isWinner] = useState(false)
+
   return (
     <>
       <main className='min-h-screen'>
-        <div className='board flex justify-center'>
+        <div className='board flex justify-center w-full'>
           <div>
-            <Board />
+            <Board game={game} winner={winner} isWinner={isWinner}/>
           </div>
-        </div>
-        <div className='buttons flex justify-around'>
-          {/* Make all buttons the same size. */}
-          <div>
-            <button className='btn btn-primary'>
-              Hit
-            </button>
-            <button className='btn btn-secondary'>
-              Stand
-            </button>
-          </div>
-          <button className='btn btn-accent'>
-            Reset
-          </button>
         </div>
       </main>
     </>
