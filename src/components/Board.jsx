@@ -1,17 +1,19 @@
 import React from "react"
 
 function Board(props) {
-    console.log(props)
+    // console.log(props)
 
     const handleReset = () => {
-        return props.isWinner(false)
+        props.isWinner(false)
+        // props.finished(false) is there a reason to use this?
     }
 
     const handleWin = () => {
-        return props.isWinner(true)
+        props.isWinner(true)
+        // props.finished(true) Is there a reason to use this? (This needs to display a modal telling the player that they won)
     }
 
-    if (props.game === undefined) {
+    if (props.winner === undefined) {
         return (
             <>
                 <h1>Error has occured</h1>
