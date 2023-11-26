@@ -20,7 +20,7 @@ function App() {
               Stand
             </button>
           </div>
-          <button className='btn btn-info'>
+          <button className='btn btn-accent'>
             Reset
           </button>
         </div>
