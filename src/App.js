@@ -6,6 +6,7 @@ function App() {
   // const [game, finished] = useState(false)
   const [winner, isWinner] = useState(false)
 
+
   return (
     <>
       <main className='min-h-screen'>
