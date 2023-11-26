@@ -54,6 +54,7 @@ function Board(props) {
                         <h2>this is PLAYER area</h2>
                         {/* PLAYER SPACE */}
                     </div>
+                        <div id="deck" class="card large back-blue shadow"></div>
                 </div>
                 {props.winner === false ?
                 <>
