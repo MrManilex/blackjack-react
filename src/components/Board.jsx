@@ -104,7 +104,7 @@ function Board(props) {
 // Create gameboard background.
 // Create section for CPU side vs Player side.
 // Add buttons for player to choose to Hit or Stand.
-// Use terminology like Bust when losing.
+// Use terminology like Bust when losing, PUSH when both sum of PLAYER and CPU are equal.
 // Incorporporate Bidding, Splitting, Betting (to some extent).
 
 
