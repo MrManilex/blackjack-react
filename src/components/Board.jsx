@@ -42,30 +42,29 @@ function Board(props) {
     } else {
         return (
             <>
-                <div>
+                <div className="flex">
                     <div>
-                        <h1>Blackjack</h1>
+                        <div>
+                            <h2>this is CPU area</h2>
+                            {/* CPU SPACE */}
+                        </div>
+                        <div>
+                            <h2>this is PLAYER area</h2>
+                            {/* PLAYER SPACE */}
+                        </div>
                     </div>
-                    <div>
-                        <h2>this is CPU area</h2>
-                        {/* CPU SPACE */}
-                    </div>
-                    <div>
-                        <h2>this is PLAYER area</h2>
-                        {/* PLAYER SPACE */}
-                    </div>
-                        <div id="deck" className="card large back-blue shadow"></div>
+                    <div id="deck" className="card large back-blue shadow"></div>
                 </div>
                 {props.winner === false ?
-                <>
-                    <button className="btn btn-primary" onClick={handleWin}>
-                        Click me to Win!
-                    </button>
-                    <button className="btn btn-info" onClick={handlePlayerHit}>
-                        Click me PUSH!
-                    </button>
+                    <>
+                        <button className="btn btn-primary" onClick={handleWin}>
+                            Click me to Win!
+                        </button>
+                        <button className="btn btn-info" onClick={handlePlayerHit}>
+                            Click me PUSH!
+                        </button>
 
-                </>
+                    </>
                     :
                     <button className="btn btn-secondary" onClick={handleReset}>
                         To Reset!
